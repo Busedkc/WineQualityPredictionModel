@@ -16,7 +16,7 @@ y = wine['quality'].apply(lambda yval:1 if yval >= 7 else 0)
 
 X_train, X_test, Y_train, Y_test = train_test_split(X,y, test_size=0.2, random_state=3)
 #Train the Random Forest Classifier model
-model = RandomForesrClassifier()
+model = RandomForestClassifier()
 model.fit(X_train, Y_train)
 # accuracy on the test data
 X_test_prediction = model.predict(X_test)
