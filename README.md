@@ -64,7 +64,7 @@ a different features of that wine. The features are descibed below:
 
 Here, we are reading the wine dataset from a CSV file using Pandas and storing it in a Pandas DataFrame called wine. 
 
-We’re creating the predictor variable X by dropping the quality column from the wine_df DataFrame. We’re creating the target variable 
+We’re creating the predictor variable X by dropping the quality column from the wine DataFrame. We’re creating the target variable 
 y by applying a lambda function to the quality column, which sets the value of 1 for quality score of 7 or higher and 0 for quality scores below 7.
 
 We’re splitting the dataset into training and testing sets using the train_test split() function from Scikit-learn. The training set contains 80% 
